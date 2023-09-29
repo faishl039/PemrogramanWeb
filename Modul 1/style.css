@@ -1,0 +1,19 @@
+table {
+  background-color: gold;
+  border: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* tr {
+  /* background-color: gold; */
+/* border: 1px solid black; */
+/* padding: 5px; */
+/* text-align: center;
+  font-weight: bold; */
+/* } */
+
+td {
+  border: 1px solid black;
+  padding: 5px;
+}
