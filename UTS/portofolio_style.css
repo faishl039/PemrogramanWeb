@@ -1,0 +1,208 @@
+.nvbr {
+  position: sticky;
+  top: 0;
+  background-color: #ded5c3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Zuume Cut;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+  color: #ffffff;
+  /* position: fixed;
+  top: 0px; */
+}
+
+.navbar-nav {
+  display: grid;
+  /* margin: 16px 0px 16px 0px; */
+  gap: 70px;
+  justify-content: center;
+}
+
+.capt-hello {
+  color: #fff;
+  text-align: justify;
+  position: absolute;
+  top: 212px;
+  left: 735px;
+  /* leading-trim: both;
+  text-edge: cap; */
+  font-family: League Spartan;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 75px;
+}
+
+.capt-myname {
+  color: #fff;
+  text-align: justify;
+  position: absolute;
+  font-family: Catamaran;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 120% */
+  top: 400px;
+  left: 605px;
+}
+
+.capt-name {
+  color: #fff;
+  text-align: justify;
+  font-family: League Spartan;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 75% */
+  top: 545px;
+  left: 480px;
+  position: absolute;
+}
+
+.capt-role {
+  color: #e8dfce;
+  text-align: justify;
+
+  font-family: League Spartan;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 120% */
+  position: absolute;
+  left: 480px;
+  top: 610px;
+}
+
+.box-desc {
+  width: 850px;
+  height: 200px;
+  flex-shrink: 0;
+  top: 750px;
+  left: 315px;
+  color: #fff;
+  text-align: justify;
+  font-family: Catamaran;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  position: absolute;
+}
+
+.poto {
+  position: absolute;
+  left: 1390px;
+  top: 421px;
+  transform: scale(1.25);
+}
+
+.portf {
+  margin-top: -24px;
+  width: max-width;
+  height: 750px;
+  flex-shrink: 0;
+  background-color: #ded5c3;
+}
+
+svg {
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+.teks-portf {
+  font-family: Zuume Cut;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.tigaportf {
+  /* top: 1350px;
+  left: 5001px; */
+  /* background-color: #fff; */
+  border-radius: 10px;
+  /* width: 1440px;
+  height: 380px; */
+  /* flex-shrink: 0; */
+  justify-content: space-around;
+}
+
+.card {
+  width: 450px !important;
+  padding: 15px 0px 20px 0px;
+  background-color: #2d3134 !important;
+}
+
+.card-title {
+  color: white !important;
+  font-family: League Spartan;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.card-text {
+  color: white !important;
+  overflow: hidden;
+  text-align: justify;
+  /* text-overflow: ellipsis; */
+  /* white-space: nowrap; */
+  font-family: Catamaran;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  width: 400px;
+  height: 65px;
+  flex-shrink: 0;
+  /* background-color: red; */
+}
+
+footer {
+  padding: 40px 301px 40px 680px;
+  background-color: #2d3134;
+}
+
+.fullitem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.further {
+  text-align: right;
+  color: white;
+  font-size: 40px;
+  font-family: Zuume Cut;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 5px;
+  margin-right: 20px;
+}
+
+.item {
+  grid-column-gap: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.contact {
+  margin-top: 17px;
+  color: white;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #ded5c3;
+  color: #000;
+}
