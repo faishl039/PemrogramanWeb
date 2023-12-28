@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uap</title>
+</head>
+
+<style>
+    td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    #unique {
+        font-weight: bold;
+    }
+
+    #tblbtn {
+        padding-right: 259px;
+    }
+</style>
+
+<body>
+    <table id="daftarBarang">
+            <tr id="unique">
+                <td>kode</td>
+                <td>barang</td>
+                <td>harga</td>
+            </tr>
+        <!-- <tbody id="daftarBarang"></tbody> -->
+        <!-- <tr id="daftarBarang"></tr> -->
+    </table>
+
+    <h1>inputan user</h1>
+
+    <table>
+            <tr>
+                <td>masukkan kode</td>
+                <td>:</td>
+                <td><input type="text" name="" id="input1"></td>
+            </tr>
+            <tr>
+                <td>banyak barang</td>
+                <td>:</td>
+                <td><input type="text" name="" id="input2"></td>
+            </tr>
+     </table>
+
+     <table>
+        <tr >
+            <td id="tblbtn">
+                <button onclick="sendinput()">submit</button>
+            </td>
+        </tr>
+     </table>
+
+
+    <script>
+        const barang = {
+        "001": { nama: "A", harga: 10000 },
+        "002": { nama: "B", harga: 20000 },
+        "003": { nama: "C", harga: 30000 },
+      };
+
+      function createlistbrg() {
+        const listBarang = document.getElementById("daftarBarang");
+
+        for (const kode in barang) {
+          const { nama, harga } = barang[kode];
+          const row = document.createElement("tr");
+
+          const kodebrg = document.createElement("td");
+          kodebrg.textContent = kode;
+          row.appendChild(kodebrg);
+
+          const namabrg = document.createElement("td");
+          namabrg.textContent = nama;
+          row.appendChild(namabrg);
+
+          const hargabrg = document.createElement("td");
+          hargabrg.textContent = harga;
+          row.appendChild(hargabrg);
+
+          listBarang.appendChild(row);
+        }
+    }
+
+        
+        function sendinput() {
+            var kode = document.getElementById("input1").value;
+            var jmlbarang = document.getElementById("input2").value;
+
+            // alert("hehe")
+            if (barang.hasOwnProperty(kode)) {
+          var hargaBarang = barang[kode].harga;
+
+          var total = jmlbarang * hargaBarang;
+
+          alert("total pembayarannya adalah " + total);
+          prompt("uang user")
+          var angsul = prompt
+          var kembali = total - angsul
+          alert("total kembaliannya adalah" + kembali);
+
+        } else {
+          alert("salah input");
+        }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+        createlistbrg();
+      });
+    </script>
+
+    </body>
+    </html>
